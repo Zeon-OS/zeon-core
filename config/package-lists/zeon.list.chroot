@@ -1,0 +1,14 @@
+
+# Desktop environment
+gnome-core
+gnome-session
+gnome-terminal
+gnome-control-center
+nautilus
+gdm3
+xorg
+pipewire
+pipewire-pulse
+network-manager-gnome
+fonts-dejavu
+fonts-liberation
