@@ -1,0 +1,13 @@
+# live-build output
+binary/
+cache/
+chroot/
+*.iso
+*.zsync.xz
+*.files
+*.contents
+*.packages
+*.modified_timestamps
+wget-log*
+build.log
+live-build_*.deb

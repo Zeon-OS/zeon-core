@@ -1,0 +1,16 @@
+#!/bin/bash
+# Set hostname
+echo "zeon-os" > /etc/hostname
+
+# Set hosts file
+cat > /etc/hosts << 'HOSTS'
+127.0.0.1   localhost
+127.0.1.1   zeon-os
+HOSTS
+
+# Set default user to zeon
+if id "user" &>/dev/null; then
+  usermod -l zeon user
+  usermod -d /home/zeon -m zeon
+  groupmod -n zeon user
+fi
